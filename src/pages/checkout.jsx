@@ -239,7 +239,10 @@ const Checkout = () => {
 							</div>
 						</div>
 						<div className='box'>
-							<Stack as={"div"} direction='horizontal' className='box__header'>
+							<Stack
+								as={"div"}
+								direction='horizontal'
+								className='box__header bordered'>
 								<div className='box__logo'>3</div>
 								<h4>Jumlah Akun</h4>
 							</Stack>
@@ -263,8 +266,11 @@ const Checkout = () => {
 							</div>
 						</div>
 						<div className='box'>
-							<Stack as={"div"} direction='horizontal' className='box__header'>
-								<div className='box__logo'>4</div>
+							<Stack
+								as={"div"}
+								direction='horizontal'
+								className='box__header bordered'>
+								<div className='box__logo '>4</div>
 								<h4>Pilih Metode Pembayaran</h4>
 							</Stack>
 							<div className='box__content'>
@@ -348,7 +354,10 @@ const Checkout = () => {
 							</div>
 						</div>
 						<div className='box'>
-							<Stack as={"div"} direction='horizontal' className='box__header'>
+							<Stack
+								as={"div"}
+								direction='horizontal'
+								className='box__header bordered'>
 								<div className='box__logo'>5</div>
 								<h4>Masukan Kode Promo (jika Ada)</h4>
 							</Stack>
@@ -366,7 +375,10 @@ const Checkout = () => {
 						</div>
 
 						<div className='box'>
-							<Stack as={"div"} direction='horizontal' className='box__header'>
+							<Stack
+								as={"div"}
+								direction='horizontal'
+								className='box__header bordered'>
 								<div className='box__logo'>6</div>
 								<h4>No. Whatsapp</h4>
 							</Stack>
