@@ -1,0 +1,90 @@
+@use "base";
+
+.accordion {
+	border-radius: 8px;
+	--bs-accordion-bg: transparent;
+
+	.accordion-item {
+		margin-bottom: 16px;
+		border: none;
+		.accordion-header {
+			border-radius: 8px 8px 0px 0px;
+			color: white;
+			background: #002f58;
+
+			.accordion-button {
+				&:not(.collapse) {
+					box-shadow: none;
+				}
+			}
+
+			button {
+				border-radius: 8px 8px 0px 0px;
+				background: #002f58;
+				font-weight: 500;
+				font-size: 16px;
+				color: white;
+				border: none;
+
+				&::after {
+					background-image: none;
+				}
+			}
+		}
+
+		.accordion-body {
+			padding: 0 19px;
+			background: #002f58;
+			.accordion-content {
+				border-top: 2px solid base.$secondary-color;
+				padding: 50px 0;
+
+				.accordion-item {
+					padding: 6px 10px;
+					width: 181px;
+					background: #ffffff;
+					border-radius: 10px;
+					cursor: pointer;
+
+					&:hover,
+					&.active {
+						background: base.$secondary-color;
+					}
+
+					h5 {
+						font-weight: 700;
+						font-size: 12px;
+						color: #2b2b2b;
+						margin-bottom: 0;
+					}
+
+					.item-info {
+						font-weight: 500;
+						font-size: 9px;
+						color: #2b2b2b;
+						margin-bottom: 11px;
+					}
+
+					.price {
+						font-weight: 700;
+						font-size: 12px;
+					}
+
+					img {
+						width: 48px;
+					}
+				}
+			}
+		}
+
+		.accordion-footer {
+			background: #003d6a;
+			border-radius: 0px 0px 6px 6px;
+			padding: 8px 8px 8px 0;
+
+			img {
+				width: 48px;
+			}
+		}
+	}
+}

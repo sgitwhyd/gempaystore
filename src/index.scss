@@ -391,6 +391,7 @@ section#banner {
 			border-radius: 12px;
 			background: $secondary-main-color;
 			margin-bottom: 39px;
+			padding-bottom: 24px;
 
 			.box__header {
 				background: linear-gradient(180deg, #006eff 0%, #01509e 100%);
@@ -422,6 +423,18 @@ section#banner {
 				}
 			}
 
+			.btn-checkout {
+				background-color: $secondary-color;
+				height: 40px;
+				border-radius: 6px;
+				width: 100%;
+				border: none;
+				font-weight: 500;
+				font-size: 14px;
+				color: $main-color;
+				margin-top: 32px;
+			}
+
 			.box__content {
 				padding: 0 24px;
 
@@ -446,6 +459,7 @@ section#banner {
 					&:focus {
 						outline: none;
 						border: 2px solid $secondary-color;
+						background: white;
 					}
 				}
 
@@ -455,7 +469,7 @@ section#banner {
 					font-weight: 400;
 					font-size: 12px;
 					margin-top: 15px;
-					padding-bottom: 25px;
+					margin-bottom: 0;
 				}
 
 				.choice__item {
@@ -502,6 +516,35 @@ section#banner {
 						font-weight: 600;
 						font-size: 16px;
 					}
+				}
+
+				.btn-apply {
+					background: #f97316;
+					height: 40px;
+					border-radius: 6px;
+					padding: 8px 17px;
+					border: none;
+					font-weight: 600;
+					font-size: 12px;
+					color: white;
+				}
+
+				.btn-increment {
+					width: 40px;
+					height: 40px;
+					border: none;
+					background: #c3c9cc;
+					border-radius: 6px;
+					font-size: 20px;
+				}
+
+				.btn-decrement {
+					font-size: 20px;
+					width: 40px;
+					height: 40px;
+					border: none;
+					background: #c3c9cc;
+					border-radius: 6px;
 				}
 			}
 		}
